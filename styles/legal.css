@@ -1,0 +1,55 @@
+/* CMS pages css */
+.cms-block {
+    background: var(--white);
+    padding: 20px 60px;
+}
+.cms-page h4 {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 20px 60px;
+    border-radius: 8px 8px 0 0;
+}
+.cms-page p {
+    margin-bottom: 24px;
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.cms-page p b {
+    color: var(--black);
+    font-weight: 600;
+}
+.cms-page  h6 {
+    margin-bottom: 12px;
+}
+
+.cms-list {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+.cms-list li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+.cms-block ul li {
+    list-style: disc;
+    margin-bottom: 8px;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+/* CMS pages css */
+
+@media screen and (max-width: 991px) {
+
+.cms-block {
+    padding: 20px;
+}
+
+.cms-page h4 {
+    padding: 20px;
+}
+}

@@ -1,0 +1,109 @@
+
+.sell-img img {
+    width: 100%;
+}
+
+.sell-banner {
+    padding: 50px 0;
+}
+
+.sell-content h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+.sell-left p {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+.sell-content {
+    max-width: 700px;
+        position: relative;
+}
+
+.arrow-wrapper {
+    display: flex;
+    justify-content: center;
+        margin-top: -80px;
+}
+.about-page .about-section.sell-section {
+   padding: 30px 8px;
+}
+
+.about-section.sell-section .about-content {
+    padding-left: 24px;
+}
+.sell-bg {
+    background: url("/images/cms/sell-bg.png");
+    background-position: center;
+    background-size: cover;
+    padding: 70px 0;
+}
+
+
+.sell-bg-content h3 {
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 800;
+}
+.sell-bg-content {
+    max-width: 740px;
+    margin: auto;
+}
+
+.sell-bg-content p {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.sell-left {
+    width: 60%;
+}
+
+.sell-right {width: 40%;}
+
+.sell-right img {
+    width: 100%;
+}
+.sellwmodal .modal-content {
+    max-width: 662px;
+}
+
+@media screen and (max-width: 991px) {
+.sell-content h2 {
+    font-size: 34px;
+}
+
+.sell-left p {
+    margin: 20px 0;
+}
+}
+
+@media screen and (max-width: 767px) {
+.sell-left {
+    width: 100%;
+}
+
+.sell-right {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.about-section.sell-section {
+    flex-direction: column;
+}
+
+.sell-banner {
+    padding: 20px 0;
+}
+.sell-bg-content h3 {
+    font-size: 30px;
+}
+
+.sell-bg {
+    padding: 40px 0;
+}
+}

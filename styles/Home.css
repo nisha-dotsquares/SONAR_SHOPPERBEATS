@@ -1,0 +1,536 @@
+/* banner */
+
+.banner .dflex {
+  gap: 17px;
+  margin-top: 16px;
+  display: flex;
+  min-height: 595px;
+}
+
+.banner img {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.slide-right {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  flex: auto;
+}
+
+.right-slide {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  width: calc(49%);
+  display: flex;
+}
+
+.slidee {
+  width: calc(25%);
+  display: flex;
+}
+
+.slide3 {
+  width: calc(18%);
+  display: flex;
+}
+
+.banner .swiper-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    /* inset: 0; */
+}
+
+.banner-content {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  max-width: 326px;
+  z-index: 2;
+}
+
+.slide.slide-2 .banner-content {
+  bottom: auto;
+  top: 40px;
+  left: 40px;
+}
+
+.banner-content h2 {
+  margin-bottom: 32px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.banner .swiper-slide {
+    height: auto !important;
+    display: flex !important;
+     position: relative;
+    /*
+    padding-top: 60%; */
+}
+.banner .swiper-slide:hover:after {
+    position: absolute;
+    content: '';
+    background: linear-gradient(180deg, #38383800 0, #000 100%) #fff0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.banner .swiper-slide img {
+   object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* position: absolute;
+    inset: 0; */
+}
+
+.slide-right-inner {
+  height: calc(50% - 9px);
+  display: flex;
+}
+
+.slide-right .swiper-slide {
+  width: 100%;
+}
+
+/* banner */
+
+/* Top Categories  */
+
+.categories-slider .item {
+  width: 100%;
+}
+.top-categories {
+    position: relative;
+}
+.categories-title {
+  background-color: var(--white);
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+  border: 1px solid var(--stroke-gray);
+}
+
+.categories-title h5 {
+    min-height: 50px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categories-img {
+    height: 245px;
+}
+.categories-img img {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+/* Top Categories  */
+
+/* deals */
+.top-deals .container {
+    position: relative;
+}
+.top-deals .swiper-button-prev,.top-deals .swiper-button-next {
+       transform: translateY(-30px);
+}
+.deals-img {
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* deals */
+
+/* ===== Promo Banner Layout ===== */
+
+.sale-banner-bg {
+  min-height: 260px;
+
+
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+
+  border-radius: 8px;
+  position: relative;
+}
+
+/* overlay */
+.sale-banner-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 8px;
+}
+
+.sale-banner-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* countdown centered */
+.sale-banner-bg .timer {
+  display: flex;
+  gap: 15px;
+}
+
+/* keep existing timer styles */
+.sale-banner-bg .time-box {
+  background: var(--white);
+  padding: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 100px;
+}
+.banner-right {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* sale banner */
+
+.sale-banner {
+  background-image: url(../../public/images/bg-sale.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.sale-banner .dflex {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.sale-banner .timer {
+  display: flex;
+  gap: 15px;
+}
+
+.time-box {
+  background: var(--white);
+  padding: 20px 0;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.time-box h2 {
+  color: var(--primary);
+}
+
+.time-box p {
+  color: var(--gray);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sale-content h5 {
+  color: var(--white);
+}
+
+.sale-content p {
+  color: var(--white);
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.sale-content .btn-filled.btn-red {
+  margin-top: 20px;
+}
+
+.sale-banner-2 {
+  background: var(--primary);
+  padding: 20px 0;
+}
+
+.sale-banner-2 .dflex {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+/* .sale-banner-2 .btn-white:hover {
+    border: 1px solid var(--white);
+} */
+.extra-sale {
+  position: relative;
+}
+
+.offer-sale {
+  position: absolute;
+  right: -70px;
+  bottom: 28px;
+  background-image: url(../../public/images/sale-shape.svg);
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* sale banner */
+
+/* Shop By Brands*/
+.brands {
+    position: relative;
+}
+.brands-bg {
+  height: auto;
+  position: relative;
+}
+
+.brands-bg:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #00000061;
+  z-index: 0;
+  border-radius: 8px;
+}
+
+.brands-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 180px;
+  min-height: 180px;
+  /* makes image cover the container without distortion */
+  border-radius: 8px;
+}
+
+.brand-logo {
+  position: absolute;
+  inset: 0;
+  /* shorthand for top: 0; right: 0; bottom: 0; left: 0 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* centers vertically and horizontally */
+  z-index: 1;
+  text-align: center;
+}
+
+.brand-logo img {
+  mix-blend-mode: luminosity;
+  max-width: 100%;
+  height: 3rem;
+}
+
+.brand-block {
+  /* position: relative; */
+  width: 100%;
+  border-radius: 8px;
+}
+
+.brand-logo img {
+  mix-blend-mode: luminosity;
+}
+
+
+@media screen and (max-width: 1700px) {
+  .banner-content h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+  }
+
+  .banner-content {
+    left: 20px;
+    bottom: 24px;
+  }
+
+  .slide.slide-2 .banner-content {
+    left: 24px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+  .banner .dflex {
+    min-height: 450px;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+  /* .banner .dflex {
+    min-height: 450px;
+  } */
+
+  .banner-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .banner-content {
+    left: 10px;
+  }
+
+  .slide.slide-2 .banner-content {
+    left: 10px;
+  }
+
+  .time-box {
+    min-width: 80px;
+  }
+
+  .time-box h2 {
+    font-size: 20px;
+  }
+
+  .offer-sale {
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    right: -18px;
+  }
+}
+
+
+@media screen and (max-width: 1199px) {
+.extra-sale img {
+			width: 134px;
+		}
+
+		.time-box {
+			min-width: 60px;
+			padding: 15px 0;
+		}
+
+		.sale-content h5 {
+			font-size: 16px;
+		}
+		.sale-content p {
+			font-size: 16px;
+		}
+    /* .banner .dflex {
+			min-height: 375px;
+		} */
+		.banner-content h2 {
+			font-size: 20px;
+		}
+		.subtitle {
+			font-size: 14px;
+		}
+    .sale-banner-bg {
+    min-height: 230px;
+}
+}
+
+@media screen and (max-width: 991px) {
+ .sale-content p {
+			font-size: 12px;
+	}
+
+.slide {
+    width: 36%; 
+}
+.slidee {
+    width: 30%; 
+}
+
+.banner-right { 
+    right: 0;
+    left: 0;
+    top: initial;
+    bottom: 0;
+    text-align: center;
+}
+
+.categories-title h5 { 
+    font-size: 16px;
+}
+
+
+  }
+		
+@media screen and (max-width: 767px) {
+
+  	.banner .dflex {
+			flex-direction: column;
+			height: auto;
+		}
+    .slide {
+			width: 100%;
+		}
+
+		.slidee,.slide3 {
+			width: 100%;
+		}
+		.banner .swiper-slide{
+			width: 100% !important; 
+		}
+	
+		.sale-banner .dflex {
+			flex-direction: column;
+		}
+
+		.sale-banner-2 .dflex {
+			flex-direction: column;
+		}
+    .sale-content {
+			text-align: center;
+		}
+    	.offer-sale {
+			right: -34px;
+			top: 40px;
+		}
+
+.sale-banner-bg .timer {
+    gap: 6px; 
+}
+    .sale-banner-bg .time-box { 
+    min-width: 60px;
+    padding: 20px 0;
+}
+.sale-banner-bg {
+    min-height: 130px;
+}
+}  
+@media screen and (max-width: 480px) {
+.brands .swiper-button-next,
+.brands .swiper-button-prev{
+      top: 55% !important;
+}
+}
