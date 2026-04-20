@@ -1,0 +1,73 @@
+/* ===== All Categories Section ===== */
+
+.all-categories__heading {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 32px;
+  
+}
+
+.all-categories__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+/* wrapper for box + title */
+.all-categories__item {
+  text-align: center;
+}
+
+/* image box */
+.all-categories__card {
+  background: var(--white);
+  height: 254px;
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.all-categories__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.all-categories__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.all-categories__image {
+  object-fit: contain;
+}
+
+/* title OUTSIDE box */
+.all-categories__title {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1199px) {
+  .all-categories__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .all-categories__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .all-categories__heading {
+    font-size: 30px;
+}
+}
+@media (max-width: 480px) {
+  .all-categories__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
